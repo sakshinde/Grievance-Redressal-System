@@ -144,13 +144,13 @@ def complaints(request):
         
         complaint_form=ComplaintForm(request.POST)
         if complaint_form.is_valid():
-            
-          
+              
+               
                instance=complaint_form.save(commit=False)
                instance.user=request.user
                mail=request.user.email
                print(mail)
-               send_mail('Hi Complaint has been Received', 'Thank you for letting us know of your concern, Have a Cookie while we explore into this matter.  Dont Reply to this mail', 'testerpython13@gmail.com', [mail],fail_silently=False)
+               send_mail(' Grievance Recieved','Hello,\n\nThis is a confirmation mail to inform you that the grievance registered by you has been received.\nAdministration assures you to attend your grievance carefully and all necessary actions will be taken towards resolving the concerned issue as soon as possible.\nBe relieved as we estimate that the following issue will be resolved within next 15 days.\n\n\nThank You,\n\nRegards,\nAdmin ', 'testerpython13@gmail.com', [mail],fail_silently=False)
                instance.save()
                
                messages.add_message(request,messages.SUCCESS, f'Complaint Registered!!!')
@@ -204,7 +204,7 @@ def allcomplaints(request):
                        
                       
                         print(m)
-                        send_mail('Hi, Complaint has been Resolved ', 'Thanks for letting us know of your concern, Hope we have solved your issue. Dont Reply to this mail', 'testerpython13@gmail.com', [m],fail_silently=False)
+                        send_mail('Grievance Resolved ', 'Hello,\n\n\nThis is a confirmation mail regarding the complaint registered by you\nAs assured,We’ve managed to solve issue registered by you as estimated within 15 days.\nYou can always register new complaints.\nThank You,\n\nRegards,\nAdmin', 'testerpython13@gmail.com', [m],fail_silently=False)
                         obj.save()
                         messages.add_message(request,messages.SUCCESS, f'Complaint Updated!!!')
                         return HttpResponseRedirect(reverse('allcomplaints'))
