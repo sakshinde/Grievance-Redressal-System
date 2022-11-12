@@ -151,7 +151,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
 EMAIL_HOST_USER = 'sakshishinde@kccemsr.edu.in'# add email address here
-EMAIL_HOST_PASSWORD = ''  #email password
+EMAIL_HOST_PASSWORD = 'barbie31272'  #email password
 DEFAULT_FROM_EMAIL = 'sakshishinde@kccemsr.edu.in'# add email address here
 EMAIL_USE_TLS = True
 
