@@ -155,9 +155,9 @@ EMAIL_HOST_USER = ''# add email address here
 EMAIL_HOST_PASSWORD = ''  #email password
 DEFAULT_FROM_EMAIL = ''# add email address here
 =======
-EMAIL_HOST_USER = 'sakshishinde@kccemsr.edu.in'# add email address here
-EMAIL_HOST_PASSWORD = 'barbie31272'  #email password
-DEFAULT_FROM_EMAIL = 'sakshishinde@kccemsr.edu.in'# add email address here
+EMAIL_HOST_USER = ''# add email address here
+EMAIL_HOST_PASSWORD = ''  #email password
+DEFAULT_FROM_EMAIL = ''# add email address here
 >>>>>>> 57f585ee53884fc5985984bb7ab6dbf2514003ed:Complaint management system/GRsytemproject/web/web/settings.py
 EMAIL_USE_TLS = True
 
