@@ -150,9 +150,9 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE=  True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
-EMAIL_HOST_USER = 'sakshishinde@kccemsr.edu.in'# add email address here
+EMAIL_HOST_USER = ''# add email address here
 EMAIL_HOST_PASSWORD = ''  #email password
-DEFAULT_FROM_EMAIL = 'sakshishinde@kccemsr.edu.in'# add email address here
+DEFAULT_FROM_EMAIL = ''# add email address here
 EMAIL_USE_TLS = True
 
 #EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
